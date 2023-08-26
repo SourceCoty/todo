@@ -30,13 +30,11 @@ body {
     display: grid;
     grid-template-columns: minmax(300px, 1fr) minmax(600px,  2.25fr);
     background-color: #f9effe;
-
 }
 
 #sidebar {
     display: grid;
     grid-template-rows: 100px 1fr;
-
 }
 
 #projectForm {
@@ -123,15 +121,19 @@ body {
 #projectDisplay {
     margin-left: 40px;
     margin-right: -12px;
+    margin-bottom: 40px;
     background-color: white;
     box-shadow: 3px 7px 12px 7px #cee0f4a1;
-    height: 130px;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 35px;
     column-gap: 20px;
     row-gap: 20px;
+    align-content: start;
+    height: auto;
     padding: 30px;
+    align-content: start;
+    align-self: start;
 }
 
 .project {
@@ -152,6 +154,7 @@ body {
     justify-content: end;
     align-items: center;
     border-radius: 8px;
+    height: 40px;
 }
 
 #delete:hover {
@@ -176,13 +179,13 @@ body {
     box-shadow: none;
 }
 
-.delete {
+.deleteBtn {
     width: 30px;
     height: 23px;
     margin-top: -5px;
 }
 
-.delete:hover {
+.deleteBtn:hover {
     width: 32px;
     height: 23px;
 }
@@ -305,7 +308,7 @@ input[type="date"] {
     box-shadow: 1px 7px 10px  #cee0f4a1;
     display: grid;
     grid-template-rows: auto;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px;
     color: #95c4f9;
     font-size: 18px;

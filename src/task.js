@@ -1,5 +1,5 @@
-const task = (title, priority) => {
-    return {title, priority}
+const task = (title, calendar, priority) => {
+    return {title, calendar, priority}
 }
 
 const taskCreator = () => {

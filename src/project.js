@@ -1,18 +1,14 @@
-const projectFolder = []
+const projectFolder = [];
 
 const project = (title) => {
     const tasks = [];
    return {title, tasks}
-}
+};
 
-const projectCreator = () => {
-    const title = prompt("Name your project")
-    
-    return project(title)
-}
+const projectCreator = (title) => project(title);
 
-const projectBinder = () => {
-    return projectFolder.push(projectCreator())
+const projectBinder = (title) => {
+    return projectFolder.push(projectCreator(title))
 }
 
 const projectEditor = (projectIndex, newTitle) => {
