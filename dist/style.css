@@ -249,7 +249,7 @@ body {
     outline: none;
 } 
 
-input[type="date"] {
+input[name="date"] {
     border-bottom: 2px solid #cee0f4;
     border-left: none;
     border-right: none;
@@ -260,7 +260,7 @@ input[type="date"] {
     font-family: inherit;
 }
 
-input[type="date"] {
+input[name="date"] {
     outline: none;
 }
 
@@ -338,4 +338,37 @@ input[type="date"] {
     align-items: center;
     margin-bottom: -10px;
     padding: 5px;
+}
+
+.editForm {
+    display: grid;
+    grid-template-rows: 30px 30px 30px 30px;
+    row-gap: 10px;
+    justify-items: start;
+
+
+}
+
+.submitBtn {
+    margin-top: 5px;
+    background-color: #e19fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    font-size: 16px;
+}
+
+
+.editTitle, 
+.editPriority {
+    border-bottom: 2px solid #cee0f4;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    text-align:start;
+    font-size: 16px;
+    font-style: inherit;
+    color: #616060;
 }
